@@ -28,7 +28,7 @@ THEN I am presented with the last searched city forecast
 
 ## Weather Dashboard 
 ```
-https://mklakhan.github.io/weather-app/s
+https://mklakhan.github.io/weather-app/
 ```
 
 ```
