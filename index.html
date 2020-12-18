@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Weather Dashboard</title>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand mx-auto h1">Weather Dashboard</span>
+</nav>
+<br>
+
+<div class="container-fluid">
+    <div class="row">
+        <aside class="col-md-3">
+
+            <!-- Search -->
+            <form class="form-inline">
+                <label for="search-box"><strong>Search for a City:</strong></label>
+                <br>
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+            <!-- Search History -->
+            <div id="search-history"></div>
+
+
+        </aside>
+        <main class="col-md-9">
+
+            <!-- Current Weather-->
+            <row class="border" id="current-weather">
+                <h3 id="City"></h3>
+                <p id="Temperature"></p>
+                <p id="Humidity"></p>
+                <p id="Wind Speed"></p>
+                <p id="UV Index"></p>
+            </row>
+
+            <!-- 5-Day Forecast -->
+            <row>
+                <header><strong>5-Day Forecast:</strong></header>
+            </row>
+            <div id="weather-tiles" class="row">
+            </div>
+        </main>
+
+    </div>
+
+</div>
+
+<!-- Moment.js Link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous"></script>
+
+<!-- Javascript Link -->
+<script src="weather.js"></script>
+
+</body>
+
+</html>
