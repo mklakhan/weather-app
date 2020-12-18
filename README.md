@@ -28,12 +28,12 @@ THEN I am presented with the last searched city forecast
 
 ## Weather Dashboard 
 ```
-https://mklakhan.github.io/weather-dashboard/
+https://mklakhan.github.io/weather-app/s
 ```
 
 ```
 Notes - Still in progress 
 Unable to view current data, load data for previous searches, clear previous searches
-Received Fatal git errors, had to re-push files
+Received Fatal git errors, had to create new repo, upload updated files
 ```
 

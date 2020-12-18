@@ -63,7 +63,7 @@ $(document).ready(function () {
             url: "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial&appid=b027a244f5303ae877ccc26ea82e7a28",
             method: "GET"
         }).then(function (response) {
-           
+            $("#weather-tiles").empty();
 
             // current date within title 
             for (var i = 1; i < 6; i++) {
