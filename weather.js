@@ -21,7 +21,7 @@ $(document).ready(function () {
 
         // Weather data from API 
         $.ajax({
-            url: "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=b027a244f5303ae877ccc26ea82e7a28",
+            url: `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=b027a244f5303ae877ccc26ea82e7a28`,
             method: "GET"
         }).then(function (response) {
             // Add city to last ten search history
@@ -34,10 +34,10 @@ $(document).ready(function () {
 
             // Data within current weather 
             var box = $("#current-weather");
-            box.append($("#city").text(response.name + " (" + moment().format('L') + ")"));
-            box.append($("#temp").text("Current Temperature (F): " + response.main.temp.toFixed(2)));
-            box.append($("#humidity").text("Humidity: " + response.main.humidity + "%"));
-            box.append($("#wind").text("Wind Speed: " + response.wind.speed + " MPH"));
+            box.append($("#City").text(response.name + " (" + moment().format('L') + ")"));
+            box.append($("#Temperature").text("Current Temperature (F): " + response.main.temp.toFixed(2)));
+            box.append($("#Humidity").text("Humidity: " + response.main.humidity + "%"));
+            box.append($("#Wind_Speed").text("Wind Speed: " + response.wind.speed + " MPH"));
             $("#current-weather").append(box);
 
             // Pass lat lon to UV data
@@ -53,7 +53,7 @@ $(document).ready(function () {
                 method: "GET"
             }).then(function (response) {
                 var currentEL = $("#current-weather");
-                currentEL.append($("#uv").text("UV Index: " + response.value));
+                currentEL.append($("#UV_Index").text("UV Index: " + response.value));
             });
         };
 
