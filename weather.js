@@ -49,7 +49,7 @@ $(document).ready(function () {
         function getUVindex(cityCoord) {
             // current UV data for current city
             $.ajax({
-                url: "https://api.openweathermap.org/data/2.5/uvi?appid=b027a244f5303ae877ccc26ea82e7a28=" + cityCoord[0] + "&lon=" + cityCoord[1],
+                url: `https://api.openweathermap.org/data/2.5/uvi?lat=${cityCoord[0]}&lon=${cityCoord[1]}&appid=b027a244f5303ae877ccc26ea82e7a28`,
                 method: "GET"
             }).then(function (response) {
                 var currentEL = $("#current-weather");
