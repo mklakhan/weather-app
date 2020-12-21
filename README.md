@@ -33,7 +33,7 @@ https://mklakhan.github.io/weather-app/
 
 ```
 Notes - Still in progress 
-Unable to view current data, load data for previous searches, clear previous searches
+Unable to load data for previous searches
 Received Fatal git errors, had to create new repo, upload updated files
 ```
 
